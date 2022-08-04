@@ -6,5 +6,85 @@
 }
 
 body {
+  font-family: "Roboto Flex", sans-serif;
+  font-size: 1rem;
+  margin-bottom: 50px;
+}
+
+:root {
+  --color-black: black;
+  --color-cool: #008080;
+  --color-white: white;
+  --color-green:#13e82f;
+}
+
+#nav {
+  background-color: var(--color-cool);
+  overflow: hidden;
+}
+
+#nav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#footer-placeholder {
+  position: fixed;
+  padding: 10px 20px;
+  font-size: 1rem;
+  width: 100%;
+  text-align: center;
+}
+
+#footer-parent {
+  background-color: var(--color-cool);
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#main-section {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-shadow: 0.07em 0 black, 0 0.07em black, -0.07em 0 black, 0 -0.07em black;
+  height: 500px;
+}
+
+#timer {
+  height: 100px;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#buttonsTimer {
+  justify-content: space-around;
+  padding: 1em;
+}
+
+.startButton {
+  background-color: green;
+}
+
+.pauseButton {
+  background-color: orange;
+}
+
+.stopButton {
   background-color: red;
+}
+
+.resetButton {
+  background-color: #05e1fa;
 }/*# sourceMappingURL=styles.css.map */
