@@ -1,4 +1,4 @@
-var timer = new easytimer.Timer();
+let timer = new easytimer.Timer();
 $(document).ready(function(){ 
     console.log('02384902384');
     $('#timer .startButton').click(function() {
@@ -15,6 +15,7 @@ $(document).ready(function(){
 
     $('#timer .resetButton').click(function() {
         timer.reset();
+        timer.pause();
     });
 
     timer.addEventListener('secondsUpdated', function(e) {
