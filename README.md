@@ -33,10 +33,10 @@ To use this website, simply visit https://davo1233.github.io to view the live ve
 
 To run the code locally, follow these steps:
 
-Clone the repository: `git clone https://github.com/davo1233/davo1233.github.io.git`
-Install dependencies: `npm install`
-Start the development server: `npm start`
-Open `http://localhost:3000` in your browser to view the site
+1. Clone the repository: `git clone https://github.com/davo1233/davo1233.github.io.git`
+2. Install dependencies: `npm install`
+3. Start the development server: `npm start`
+4. Open `http://localhost:3000` in your browser to view the site
 
 ## Contributing
 Contributions are welcome! If you find a bug or have an idea for a new feature, please submit an issue or pull request on GitHub.
