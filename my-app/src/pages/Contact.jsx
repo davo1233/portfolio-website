@@ -2,6 +2,9 @@ import React from 'react'
 import { Box, Text, Heading, useMediaQuery, Flex, VStack } from '@chakra-ui/react';
 import ContactForm from '../components/ContactForm';
 
+/*
+contact page which lists my contact information and the contact form
+*/
 const Contact = () => {
     const [isNotSmallerScreen] = useMediaQuery("(min-width:600px"); 
     return (
@@ -13,7 +16,10 @@ const Contact = () => {
                 <Text mt={2}>Phone: (+61) 435009167</Text>
             </Box>
            <Box p = {5} mt = {100}>
+                <Text>Please send me a message if you are interested.</Text>
                 <ContactForm/>
+           
+                
             </Box>
            </VStack>
             

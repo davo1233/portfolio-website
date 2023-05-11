@@ -10,6 +10,10 @@ import Contact from "../pages/Contact";
 
 import { FaInstagram,FaLinkedin, FaGithub } from "react-icons/fa";
 
+/*
+the navbar which is displayed in the top bar that allows the user to navigate to different parts of the site
+and also contains the links to my socials
+*/
 function Navbar() {
     
     const NavLink = ( {to,text} ) => (
