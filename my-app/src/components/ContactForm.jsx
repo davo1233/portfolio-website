@@ -17,6 +17,7 @@ function ContactForm() {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
+    const [messageSent, setMessageSent] = useState(false);
     const handleSubmit = (event) => {
         event.preventDefault();
         const templateParams = {
@@ -29,7 +30,7 @@ function ContactForm() {
         .then((result) => {
           console.log(result.text);
           event.target.reset();
-          
+          setMessageSent(true);
         }, (error) => {
           console.log(error.text);
         });
