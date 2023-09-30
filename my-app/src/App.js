@@ -24,7 +24,7 @@ function App() {
 
         <Flex w="100%" direction = "column" h = "100%">
 			
-            <BrowserRouter>
+            <BrowserRouter basename={process.env.PUBLIC_URL}>
 
 			<Box w = "100%">
 				<Navbar />

@@ -1,8 +1,9 @@
 {
+  "homepage": "https://davo1233.github.io/davo1233.github.io",
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://davo1233.github.io/react-gh-pages",
+  
   "predeploy": "npm run build",
   "deploy": "gh-pages -d build",
   "dependencies": {
