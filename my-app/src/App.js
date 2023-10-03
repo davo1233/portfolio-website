@@ -19,12 +19,11 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 function App() {
   return (
     <ChakraProvider theme={theme}>
-      
       <Stack>
 
         <Flex w="100%" direction = "column" h = "100%">
 			
-            <BrowserRouter basename={process.env.PUBLIC_URL}>
+            
 
 			<Box w = "100%">
 				<Navbar />
@@ -40,10 +39,11 @@ function App() {
 			
 
              
-            </BrowserRouter>
+            
 
         </Flex>
       </Stack>
+      
     </ChakraProvider>
   );
 }
