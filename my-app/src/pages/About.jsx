@@ -1,42 +1,27 @@
 import React from 'react';
 import { Disclosure } from '@headlessui/react';
+import { Box, Text, Heading } from '@chakra-ui/react';
 
 const About = () => {
   return (
-    <div>
-      <h1>About Me</h1>
-      <p>Welcome to my portfolio website! I'm passionate about various hobbies and interests that have shaped me into who I am today.</p>
-      <Disclosure>
-        {({ open }) => (
-          <>
-            <Disclosure.Button className="font-bold text-lg">Hobbies</Disclosure.Button>
-            <Disclosure.Panel className="ml-4 mt-2">
-              <ul>
-                <li>Photography: I love capturing moments and exploring different perspectives through my camera lens. It allows me to express my creativity and document beautiful memories.</li>
-                <li>Hiking: Exploring nature and embarking on challenging hikes is something I find truly invigorating. It helps me connect with the outdoors and find peace in the midst of nature.</li>
-                <li>Reading: Books are my constant companions. I enjoy diving into different genres, expanding my knowledge, and discovering new ideas through literature.</li>
-              </ul>
-            </Disclosure.Panel>
-          </>
-        )}
-      </Disclosure>
-      <Disclosure>
-        {({ open }) => (
-          <>
-            <Disclosure.Button className="font-bold text-lg">Interests</Disclosure.Button>
-            <Disclosure.Panel className="ml-4 mt-2">
-              <ul>
-                <li>Technology: I'm fascinated by the ever-evolving world of technology. Exploring new gadgets and learning about emerging trends keeps me engaged and inspired.</li>
-                <li>Web Development: Building websites and crafting intuitive user experiences is a passion of mine. I enjoy working with various web technologies and constantly expanding my skills in this field.</li>
-                <li>Travel: Exploring different cultures and experiencing new destinations is a great source of inspiration for me. It broadens my perspective and allows me to appreciate the beauty of diversity.</li>
-              </ul>
-            </Disclosure.Panel>
-          </>
-        )}
-      </Disclosure>
-      <p>I believe that combining my diverse hobbies and interests with my skills in web development allows me to create unique and engaging digital experiences.</p>
-      <p>Thank you for visiting my portfolio website. Feel free to explore my projects and get in touch if you have any questions or collaboration opportunities.</p>
-    </div>
+    <Box p={4}>
+      <Heading as="h1" size="xl" mb={4}>About Me</Heading>
+      <Text>
+        Hello! I'm Spenser, a passionate software developer based in Sydney. I graduated from the University of New South Wales (UNSW) with a degree in Computer Science and have been on an exciting journey ever since.
+      </Text>
+      <Text>
+      During my time at UNSW, I not only pursued my academic interests but also explored my passion for coding. When I'm not at my computer, you'll often find me exploring the beautiful outdoors on my bike. It's a great way for me to clear my mind and find inspiration for my next coding adventure.
+      </Text>
+      <Text>
+        Throughout my university years, I had the privilege of working on a variety of software projects that challenged me and helped me grow as a developer. From building web applications to diving into the world of machine learning, I've had the opportunity to engage with diverse projects that have honed my skills.
+      </Text>  
+      <Text>
+      My primary focus is on creating clean, efficient, and user-friendly software solutions. I'm proficient in a wide range of technologies, including React.js, which I absolutely love for its versatility and performance. I believe that technology can make the world a better place, and I'm excited to be a part of that transformation through my work.
+      </Text> 
+      <Text>
+      This portfolio showcases some of the projects I've worked on, and I hope you find them as exciting as I did. Feel free to explore and get in touch if you'd like to collaborate on a project or just have a chat about software development. I'm always up for a new challenge!
+      </Text>
+    </Box>
   );
 };
 

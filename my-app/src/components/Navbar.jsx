@@ -31,6 +31,7 @@ function Navbar() {
                         <NavLink to="/" text="Home" ml={2} />
                         <NavLink to="/about" text="About Me" ml={2} /> 
                         <NavLink to="/contact" text="Contact" ml={2} />
+                        <NavLink to="/hobbies" text="Hobbies" ml={2} />
                 </HStack> 
             </Box>
             <Box>
