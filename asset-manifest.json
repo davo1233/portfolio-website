@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/davo1233.github.io/static/js/main.6b3fddf1.js",
-    "static/js/787.016dd43c.chunk.js": "/davo1233.github.io/static/js/787.016dd43c.chunk.js",
-    "static/media/logo.svg": "/davo1233.github.io/static/media/logo.314a949b75516e3aca4aeb6467362e8d.svg",
-    "index.html": "/davo1233.github.io/index.html",
-    "main.6b3fddf1.js.map": "/davo1233.github.io/static/js/main.6b3fddf1.js.map",
-    "787.016dd43c.chunk.js.map": "/davo1233.github.io/static/js/787.016dd43c.chunk.js.map"
+    "main.js": "/portfolio-website/static/js/main.4f9b9f2f.js",
+    "static/js/787.016dd43c.chunk.js": "/portfolio-website/static/js/787.016dd43c.chunk.js",
+    "static/media/logo.svg": "/portfolio-website/static/media/logo.314a949b75516e3aca4aeb6467362e8d.svg",
+    "index.html": "/portfolio-website/index.html",
+    "main.4f9b9f2f.js.map": "/portfolio-website/static/js/main.4f9b9f2f.js.map",
+    "787.016dd43c.chunk.js.map": "/portfolio-website/static/js/787.016dd43c.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.6b3fddf1.js"
+    "static/js/main.4f9b9f2f.js"
   ]
 }
