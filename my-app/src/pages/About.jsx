@@ -1,10 +1,13 @@
 import React from 'react';
-import { Disclosure } from '@headlessui/react';
 import { Box, Text, Heading } from '@chakra-ui/react';
+import {cardStyle} from '../styling'
 
 const About = () => {
+  
+const cardStyles = useStyleConfig("cardStyle");
+
   return (
-    <Box p={4}>
+    <Box p={4} sx={cardStyles}>
       <Heading as="h1" size="xl" mb={4}>About Me</Heading>
       <Text>
         Hello! I'm Spenser, a passionate software developer based in Sydney. I graduated from the University of New South Wales (UNSW) with a degree in Computer Science and have been on an exciting journey ever since.
