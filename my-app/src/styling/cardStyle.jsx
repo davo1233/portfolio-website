@@ -1,5 +1,5 @@
 import { defineStyleConfig } from '@chakra-ui/react'
-const Card = defineStyleConfig({
+const cardStyle = defineStyleConfig({
     // The styles all Cards have in common
     baseStyle: {
       display: 'flex',
@@ -27,4 +27,4 @@ const Card = defineStyleConfig({
     },
   })
 
-  export default Card;
+  export default cardStyle;

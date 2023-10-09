@@ -1,5 +1,5 @@
 import { extendTheme } from '@chakra-ui/react';
-import { cardStyle } from '../styling'; // Import the CardStyleConfig
+import { cardStyle} from '../styling/cardStyle'; // Import the CardStyleConfig
 
 const theme = extendTheme({
   components: {
