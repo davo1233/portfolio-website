@@ -6,13 +6,16 @@ const StravaWidget = () => {
 
   useEffect(() => {
     const clientId = process.env.REACT_APP_CLIENT_ID;
+    console.log(clientId)
     const clientSecret = process.env.REACT_APP_CLIENT_SECRET;
-    const refreshToken = 'your_refresh_token'; // You need to obtain this token first
+    console.log(clientSecret)
+    const clientAccessToken = process.env.REACT_APP_CLIENT_ACCESS_TOKEN
+    const refreshToken = 'e92e8f7f1c199937e602baf4c75342fde0ed009c'; // You need to obtain this token first
 
     const fetchTotalDistance = async () => {
       try {
         const response = await axios.post(
-          `https://www.strava.com/oauth/token`,
+          `https://www.strava.com/api/v3/oauth/token`,
           null,
           {
             params: {
@@ -25,6 +28,7 @@ const StravaWidget = () => {
         );
 
         const accessToken = response.data.access_token;
+        console.log('access token', accessToken)
 
         const activityResponse = await axios.get(
           'https://www.strava.com/api/v3/athlete/activities',
