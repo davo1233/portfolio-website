@@ -1,14 +1,16 @@
 import React from 'react';
-import { ChakraProvider, VStack, theme, Grid, Box } from '@chakra-ui/react';
+import {  VStack,  Grid, Box } from '@chakra-ui/react';
 import Home from './pages/Home';
 import Contact from './pages/Contact';
 import About from './pages/About';
 import Navbar from './components/Navbar';
 import { Routes, Route } from 'react-router-dom';
+import { useBreakpointValue } from "@chakra-ui/react";
 
 function App() {
+  const isMobile = useBreakpointValue({ base: true, md: false }, { ssr: false });  
   return (
-    <ChakraProvider theme={theme}>
+    
       <Grid
         templateColumns="1fr" // Single column layout
         templateRows="auto 1fr" // First row auto-sized for Navbar, second row takes the rest of the space
@@ -16,19 +18,18 @@ function App() {
       >
         {/* Navbar */}
         <Box>
-          <Navbar />
+          <Navbar isMobile = {isMobile} />
         </Box>
 
         {/* Main Content */}
         <Box overflowY="auto" padding="4">
           <Routes>
-            <Route exact path="/" element={<Home />} />
+            <Route exact path="/" element={<Home isMobile = {isMobile}/>} />
             <Route exact path="/about" element={<About />} />
             <Route exact path="/contact" element={<Contact />} />
           </Routes>
         </Box>
       </Grid>
-    </ChakraProvider>
   );
 }
 

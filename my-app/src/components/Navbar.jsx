@@ -22,10 +22,9 @@ import {
   the navbar which is displayed in the top bar that allows the user to navigate to different parts of the site
   and also contains the links to my socials
   */
-  const Navbar = () => {
+  const Navbar = (props) => {
 
-    const [isOpen, setIsOpen] = useState(false);
-    const isMobile = useBreakpointValue({ base: true, md: false }, { ssr: false });  
+    const [isOpen, setIsOpen] = useState(false); 
 
   
     const toggleMenu = () => {
@@ -43,7 +42,7 @@ import {
         <Box>
           <Logo></Logo>
         </Box>
-        {isMobile ? (
+        {props.isMobile ? (
           <Box  color="white">
             <Button onClick={toggleMenu}>Menu</Button>
   
