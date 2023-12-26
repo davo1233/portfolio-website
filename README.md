@@ -29,7 +29,7 @@ This website includes the following features:
 - Contact page with a form to get in touch with me
 
 ## Usage
-To use this website, simply visit https://davo1233.github.io to view the live version of the site. Alternatively, you can download the source code and run it locally on your machine.
+To use this website, simply visit https://davo1233.github.io/portfolio-website to view the live version of the site. Alternatively, you can download the source code and run it locally on your machine.
 
 To run the code locally, follow these steps:
 
