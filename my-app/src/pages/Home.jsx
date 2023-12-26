@@ -1,9 +1,10 @@
 import React from 'react';
+
 import {
   Heading,
   VStack,
   Circle,
-  useMediaQuery,
+  Image,
   Flex,
   Box,
   Text,
@@ -13,6 +14,7 @@ import { DiPython, DiJavascript, DiJava } from 'react-icons/di';
 import CodingCard from '../components/CodingCard';
 
 const RESUME_URL = window.location.href + '/resume.pdf';
+const IMAGE_URL = window.location.href +"/profile_image.jpg";
 
 const Home = (props) => {
   const isMobile = props.isMobile;
@@ -33,8 +35,17 @@ const Home = (props) => {
         opacity="0.1"
         w="200px"
         h="200px"
-        alignSelf="flex-end"
-      ></Circle>
+        alignSelf="flex-center"
+      >
+		<Image
+          borderRadius="full"
+          boxSize="100%"
+          objectFit="cover"
+          src=  {IMAGE_URL}// Replace with your photo URL or import statement
+          alt="Your Photo"
+        />
+
+	  </Circle>
       <Flex
         direction={isMobile ? 'column' : 'row'}
         spacing="200px"

@@ -16,10 +16,10 @@ const Contact = () => {
                 <Text mt={2}>Phone: (+61) 435009167</Text>
             </Box>
            <Box p = {5} mt = {100}>
-                <Text>Please send me a message if you are interested.</Text>
+                <Text>Please send me a message if you are interested in hiring me.</Text>
+            </Box>
+            <Box>
                 <ContactForm/>
-           
-                
             </Box>
            </VStack>
             
