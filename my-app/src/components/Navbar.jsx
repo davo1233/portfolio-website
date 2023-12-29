@@ -7,24 +7,21 @@ import {
     StackDivider,
     Text,
     HStack,
-    VStack,
     Button,
-    Collapse,
+    Menu,
+    MenuButton,
+    MenuList,
+    MenuGroup,
+    MenuItem
   } from "@chakra-ui/react";
   import ColorModeSwitcher from "./ColorModeSwitcher";
   import { BrowserRouter as Router, Link as RouteLink } from "react-router-dom";
-  import { useBreakpointValue } from "@chakra-ui/react";
-  import React, { useState } from "react";
+  import React from "react";
   import { Logo } from "./Logo";
   import { FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
   
   const Navbar = (props) => {
-    const [isOpen, setIsOpen] = useState(false);
-  
-    const toggleMenu = () => {
-      setIsOpen(!isOpen);
-    };
-  
+    
     const NavLink = ({ to, text }) => (
       <Link as={RouteLink} to={to}>
         <Text fontSize="xl">{text}</Text>
@@ -39,24 +36,34 @@ import {
         <Flex align="center">
           {props.isMobile ? (
             <Box color="white" position="relative">
-              <Button onClick={toggleMenu}>Menu</Button>
-  
-              <Collapse in={isOpen} animateOpacity>
-                <VStack
-                  align="start"
-                  spacing={2}
-                  mt={2}
-                  position="absolute"
-                  top="100%"
-                  left="0"
-                  zIndex="1000"
-                >
-                  <NavLink to="/" text="Home" />
-                  <NavLink to="/about" text="About" />
-                  <NavLink to="/contact" text="Contact" />
-                  <NavLink to="/projects" text="Projects" />
-                </VStack>
-              </Collapse>
+              <Menu>
+                {({ isOpen }) => (
+                    <>
+                    <MenuButton
+                        isActive={isOpen}
+                        as={Button}
+                    >
+                        {"Menu"}
+                    </MenuButton>
+                    <MenuList>
+                        <MenuGroup>
+                        <MenuItem as={RouteLink} to="/">
+                            Home
+                        </MenuItem>
+                        <MenuItem as={RouteLink} to="/about">
+                            About
+                        </MenuItem>
+                        <MenuItem as={RouteLink} to="/contact">
+                            Contact
+                        </MenuItem>
+                        <MenuItem as={RouteLink} to="/projects">
+                            Projects
+                        </MenuItem>
+                        </MenuGroup>
+                    </MenuList>
+                    </>
+                )}
+                </Menu>
             </Box>
           ) : (
             <HStack spacing={3} divider={<StackDivider />} ml={20}>
