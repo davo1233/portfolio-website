@@ -1,6 +1,7 @@
 import React from 'react';
-import { Disclosure } from '@headlessui/react';
 import { Box, Text, Heading, VStack, Tab, Tabs, TabList, TabPanels, TabPanel, Image, Flex } from '@chakra-ui/react';
+import ImageSlider from '../components/ImageSlider';
+import { SlideCyclingData } from '../imagesData/SlideCyclingData';
 
 const About = () => {
   return (
@@ -30,18 +31,20 @@ const About = () => {
           <TabPanels>
             <TabPanel flex = '2'>
               {/* This is the section about cycling */}
-              <Image src="cycling-image.jpg" alt="Cycling" mb={4} /> 
               <Text>
                 Cycling has always been more than just a hobby for me; it's a journey of exploration and self-discovery. One of my most memorable cycling adventures was the Sydney to Newcastle bike ride. 
                 The scenic route took me through picturesque landscapes, charming towns, and coastal views. Pedaling through the undulating terrains, I felt a sense of accomplishment and freedom.
               </Text>
               <Text mt={4}>
-                Along the way, I explored various places, each with its unique charm. Some notable stops included [List the places you visited during the ride]. 
+                Along the way, I explored various places, each with its unique charm. Some notable stops included Palm Beach where I took the ferry across to the Central Coast and visited Gosford, Terrigal . 
                 Whether it was a cozy café in a small town or a breathtaking lookout point, every stop added a new dimension to my cycling experience.
               </Text>
               <Text mt={4}>
                 This journey allowed me to connect with nature, meet fellow cycling enthusiasts, and challenge my own limits, contributing to my love for this invigorating and fulfilling activity.
               </Text>
+              <Box w="100%" p={4} color="white">
+                <ImageSlider slides={SlideCyclingData} />
+              </Box>
             </TabPanel>
             {/* This is the section about public transport */}
             <TabPanel flex = '2'>
@@ -66,6 +69,8 @@ const About = () => {
                 The ever-changing scenery outside my window and the camaraderie among colleagues further enrich the experience. In essence, being a bus driver is about more than just driving; 
                 it's about contributing to the community, fostering connections, and finding satisfaction in the small moments that make a big difference.
               </Text>
+
+
             </TabPanel>
             {/* This is the section about travelling */}
             <TabPanel flex = '2'>
