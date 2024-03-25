@@ -17,4 +17,4 @@ export const SlidePTData = [
       process.env.PUBLIC_URL + '/images/beach.jpg'
     },
     
-  ];
+  ];   

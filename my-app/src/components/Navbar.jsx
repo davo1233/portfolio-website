@@ -12,15 +12,18 @@ import {
     MenuButton,
     MenuList,
     MenuGroup,
-    MenuItem
+    MenuItem,
+    useColorMode,
   } from "@chakra-ui/react";
   import ColorModeSwitcher from "./ColorModeSwitcher";
   import { BrowserRouter as Router, Link as RouteLink } from "react-router-dom";
   import React from "react";
   import { Logo } from "./Logo";
   import { FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
+  import { extendTheme } from '@chakra-ui/react'
   
   const Navbar = (props) => {
+    const { colorMode } = useColorMode();
     
     const NavLink = ({ to, text }) => (
       <Link as={RouteLink} to={to}>
@@ -35,7 +38,7 @@ import {
         </Box>
         <Flex align="center">
           {props.isMobile ? (
-            <Box color="white" position="relative">
+            <Box color={colorMode === "light" ? "black" : "white"} position="relative">
               <Menu>
                 {({ isOpen }) => (
                     <>
